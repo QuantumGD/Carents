@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+
+
+    .wallpaper_car {
+        background-image: url(https://i.ibb.co/JsgLGhc/Beautiful-Car-Wallpapers.jpg);
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .car_container {
+        font-size: medium;
+        color: white;
+    }
+</style>
+
+<div class="wallpaper_car" role="banner">
+    <div class="car_container">
+        <div class="row">
+            <div class="col-md-8">
+                <section id="loginForm">
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <h1>Welcome to Carents</h1>
+                        <h4>Sharing is power</h4>
+                        <hr />
+                    }
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Get ready to go !!!</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" style="border-radius: 25px">
+
+            <div class="item active">
+                <img src="https://i.ibb.co/WPQWdfL/b3aqm-2efl5.jpg" alt="Time" style="width:100%;">
+                <div class="carousel-caption ">
+                    <h3>Any Time</h3>
+                    <p>Renting cars in a short time!!</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://i.ibb.co/RYK0hHr/carsharing2.jpg" alt="Fun" style="width:100%;">
+                <div class="carousel-caption">
+                    <h3>Any Fun</h3>
+                    <p>Rent a car for a trip!</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://i.ibb.co/bWhhFrg/Blog-1.jpg" alt="Where" style="width:100%;">
+                <div class="carousel-caption">
+                    <h3>Any Where</h3>
+                    <p>Renting your car from real people !</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" style="border-radius: 25px" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" style="border-radius: 25px" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Carent gives you a powerful, patterns-based way to make life easier
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>find your car</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>the car near by you</h2>
+        <p>You can easily find a car</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>

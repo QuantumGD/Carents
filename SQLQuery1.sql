@@ -1,0 +1,2 @@
+﻿ALTER TABLE Rates
+ALTER COLUMN Rating int
