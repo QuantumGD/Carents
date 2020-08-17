@@ -1,6 +1,6 @@
 # Carents
 
-## This is a car-rent website developped by dotnet framework
+## This is a car rent website developped by dotnet framework and  C#
 
 ### Home page
 ![image](https://github.com/QuantumGD/Carents/blob/master/pic/home.png)
